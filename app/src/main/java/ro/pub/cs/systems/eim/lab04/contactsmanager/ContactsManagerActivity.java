@@ -90,22 +90,22 @@ public class ContactsManagerActivity extends AppCompatActivity {
                 Intent intent = new Intent(ContactsContract.Intents.Insert.ACTION);
                 intent.setType(ContactsContract.RawContacts.CONTENT_TYPE);
                 if (Nume != null) {
-                    intent.putExtra(ContactsContract.Intents.Insert.NAME, (Parcelable) Nume);
+                    intent.putExtra(ContactsContract.Intents.Insert.NAME,  Nume.getText().toString());
                 }
                 if (NrTel != null) {
-                    intent.putExtra(ContactsContract.Intents.Insert.PHONE, (Parcelable) NrTel);
+                    intent.putExtra(ContactsContract.Intents.Insert.PHONE, NrTel.getText().toString());
                 }
                 if (AdrEl != null) {
-                    intent.putExtra(ContactsContract.Intents.Insert.EMAIL, (Parcelable) AdrEl);
+                    intent.putExtra(ContactsContract.Intents.Insert.EMAIL, AdrEl.getText().toString());
                 }
                 if (AdrPostala != null) {
-                    intent.putExtra(ContactsContract.Intents.Insert.POSTAL, (Parcelable) AdrPostala);
+                    intent.putExtra(ContactsContract.Intents.Insert.POSTAL, AdrPostala.getText().toString());
                 }
                 if (Pozitie != null) {
-                    intent.putExtra(ContactsContract.Intents.Insert.JOB_TITLE, (Parcelable) Pozitie);
+                    intent.putExtra(ContactsContract.Intents.Insert.JOB_TITLE, Pozitie.getText().toString());
                 }
                 if (Companie != null) {
-                    intent.putExtra(ContactsContract.Intents.Insert.COMPANY, (Parcelable) Companie);
+                    intent.putExtra(ContactsContract.Intents.Insert.COMPANY, Companie.getText().toString());
                 }
                 ArrayList<ContentValues> contactData = new ArrayList<ContentValues>();
                 if (SiteWeb != null) {
