@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ro.pub.cs.systems.eim.lab04.contactsmanager.ContactsManagerActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/MoreInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MoreInfo" />
+
+                <EditText
+                    android:id="@+id/Nume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Nume" />
+
+                <EditText
+                    android:id="@+id/NrTel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Nr.Tel." />
+
+                <EditText
+                    android:id="@+id/AdrEl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Adr.el." />
+
+                <EditText
+                    android:id="@+id/AdrPostala"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Adr.postala" />
+
+                <Button
+                    android:id="@+id/Save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Save" />
+
+                <Button
+                    android:id="@+id/Cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/SecondLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <EditText
+                    android:id="@+id/Pozitie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Pozitie" />
+
+                <EditText
+                    android:id="@+id/Companie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Companie" />
+
+                <EditText
+                    android:id="@+id/Site"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Site web" />
+
+                <EditText
+                    android:id="@+id/IdMsg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Id. msg." />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
+
